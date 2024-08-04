@@ -1,0 +1,18 @@
+.interests {
+    grid-area: 3 / 3 / 4 / 5;
+
+    @media screen and (max-width: 600px) {
+        grid-area: 6 / 1 / 7 / 5;
+    }
+}
+
+.interests__lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.interests__item {
+    padding: 4px 10px;
+    border-radius: 40px;
+}

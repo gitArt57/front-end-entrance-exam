@@ -1,0 +1,27 @@
+.langs {
+    grid-area: 1 / 3 / 2 / 5;
+    --lang--level: 100%;
+
+    @media screen and (max-width: 600px) {
+        grid-area: 2 / 1 / 3 / 5;
+    }
+}
+
+.langs__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.langs__row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 17px;
+    align-items: center;
+}
+
+.langs__level {
+    border-radius: 3px;
+    height: 12px;
+    width: var(--lang--level, 100%);
+}
